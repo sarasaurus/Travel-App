@@ -3,119 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <title>VisionAiry</title>
+	
+	 <!--link to stylesheet--> 
   <link rel="stylesheet" href="css/style.css">
+	
+	
+	    <!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
 
 </head>
 <body>
+	
 <!-- partial:index.partial.html -->
-<header class="header">
-  <a href="" class="logo">VisionAiry</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
+<header class="header" id="header">
+  <h1><a href="#">VisionAiry</a></h1>
+  
+	<input class="menu-btn" type="checkbox" id="menu-btn" />
+  	<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+	
+ 	<ul class="menu">
     <li><a href="#work">The App</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#careers">Careers</a></li>
     <li><a href="#contact">Contact</a></li>
-  </ul>
+  	</ul>
 </header>
+	
 <section id="hero">
   <div id="hero_text">
-    <h2>Inspirational Headline</h2>
-    <h3>Additional Motivaltion</h3>
+    <h2>Curated Travel</h2>
+    <h3>Choose your own adventure, or let VisionAiry pick the perfect trip.</h3>
     <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-    <a href="#" class="cta">Get Started</a>
+    <a href="#" class="button button_brand button_lg">Get Started Button</a>
+	<a href="#" class="button button_light button_lg">Download now</a>
     </div>
 </section>
   
-  
+  <!--New hero/first row of content-->
+<div class="row v_space_lg">
+	<h1>Travel curated by VisionAiry</h1>
+</div>
+<div class="container" id="new_hero"> 
+	<div class="column three_fifth">
+		<div class="item">
+			<h2>Let us be your guide - trips based on your preferences</h2>
+			<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+		</div>
+	</div>	
+	<div class="column two_fifth">
+		<div class="item flex_end">
+			<h3>It's the best. Truly.</h3>
+			<a href="#" class="button button_light button_lg">Get Started ASAP</a>
+		</div>
+	</div>
+</div>
+	
+	
+	<!--Calendar Integration-->
+<div class="container">	
+	<div class="row v_space_md">
+		<h2>Powerful Calendar Integration</h2>
+	</div>
+	<div class="row"> 
+		<div class="item">
+			<img src="http://placekitten.com/150/75" alt="kitten">
+			<h3>Google Calendar Integration</h3>
+			<p>Wolf microdosing taxidermy chillwave blue bottle tempor, bespoke glossier bushwick vaporware consequat aliqua pitchfork.</p>
+		</div>
+		<div class="item">
+			<img src="http://placekitten.com/150/75" alt="kitten">
+			<h3>Work and School breaks</h3>
+			<p>Wolf microdosing taxidermy chillwave blue bottle tempor, bespoke glossier bushwick vaporware consequat aliqua pitchfork.</p>
+		</div>
+		<div class="item">
+			<img src="http://placekitten.com/150/75" alt="kitten">
+			<h3>Holiday reminders</h3>
+			<p>Wolf microdosing taxidermy chillwave blue bottle tempor, bespoke glossier bushwick vaporware consequat aliqua pitchfork.</p>
+		</div>
+	</div>
+	
+	<!--Trips based on location-->
+	<div class="row v_space_md">
+		<h2>Trips based on travel time/distance</h2>
+	</div>
+	<div class="row">
+		<div class="item">
+			<img src="http://placekitten.com/150/75" alt="kitten">
+			<h3>Local - 1 hour travel</h3>
+			<p>Wolf microdosing taxidermy chillwave blue bottle tempor, bespoke glossier bushwick vaporware consequat aliqua pitchfork. </p>
+		</div>
+		<div class="item">
+			<img src="http://placekitten.com/150/75" alt="kitten">
+			<h3>Mid - 2-5 hour travel</h3>
+			<p>Wolf microdosing taxidermy chillwave blue bottle tempor, bespoke glossier bushwick vaporware consequat aliqua pitchfork. </p>
+		</div>
+		<div class="item">
+			<img src="http://placekitten.com/150/75" alt="kitten">
+			<h3>Far - 5-10+ hour travel</h3>
+			<p>Wolf microdosing taxidermy chillwave blue bottle tempor, bespoke glossier bushwick vaporware consequat aliqua pitchfork.  </p>
+		</div>
+	</div>
+	
+	<!--More Features or Call outs-->
+	<div class="row v_space_md">
+		<h2>Even More Features</h2>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="item">
+				<h3>Flight Deals</h3>
+				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
+			</div>
+		</div>
+		<div class="column">
+			<div class="item">
+				<h3>Family Travel</h3>
+				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
+			</div>
+			<div class="item">
+				<h3>EDU App Integration</h3>
+				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<!--Explore Section-->
+<div class="row v_space_lg">
+	<h1>Discover dreamy destinations</h1>
+</div>
 
+	<!--City Guides-->
 <div class="container">
-<div class="row">
-  <div class="item">
-  <h3>Full</h3>
-    <h1>Headline 1</h1>
-     <h2>Headline 2</h2>
-     <h3>Headline 3</h3>
-     <h4>Headline 4</h4>
-     <h5>Headline 5</h5>
-    <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
+	<div class="row">
+		<h2>Even More Features</h2>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="item">
+				<h3>City Guides</h3>
+				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
+			</div>
+		</div>
+		<div class="column">
+			<div class="item">
+				<h3>City 1</h3>
+				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
+			</div>
+			<div class="item">
+				<h3>City 2</h3>
+				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
+			</div>
+			<div class="item">
+				<h3>City 3</h3>
+				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
+			</div>
+		</div>
+	</div>
+	
+	<!--Travel Deals-->
+	<div class="row v_space_md">
+		<h2>Flight Deals</h2>
+	</div>
+	<div class="row">
+		<h3>Ready for a change of scenery? We scour the web for daily flight deals, so if you don't already have a destination in mind, this might just be your jumping off point.</h3>
+	</div>
 </div>
 
-<div class="row">
-  <div class="item">
-  <h3>Half</h3>
-    <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
-   <div class="item">
-  <h3>Half</h3>
-    <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
+	<!--Go section -->
+<div class="row v_space_lg">
+	<h1>Ready to go?</h1>
+</div>	
+	
+	<!--Digital Passport-->
+<div class="container">
+	<div class="row">
+		<h2>Save it all in your Digital Passport</h2>
+	</div>
+	<div class="row">
+		<h3>Review saved itineraries. We'll suggest additional things to do, and get the stoke going by counting down to your next trip!</h3>
+	</div>
+	<div class="row">
+			<div class="item">
+				<h4>Item 1</h4>
+			</div>
+			<div class="item">
+				<h4>Item 2</h4>
+				<a href="#" class="button button_sm button_brand">add to trip!</a>
+			</div>
+			<div class="item">
+				<h4>Item 3</h4>
+			</div>
+			<div class="item">
+				<h4>Item 4</h4>
+			</div>
+			<div class="item">
+				<h4>Item 5</h4>
+			</div>
+	</div>
 </div>
-  <div class="row">
-  <div class="item">
-  <h3>Quarter</h3>
-    <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
-      <div class="item"><h3>Quarter</h3>
-          <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
-          <div class="item"><h3>Quarter</h3>
-              <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
-    <div class="item"><h3>Quarter</h3>
-        <p>Vestibulum a tincidunt id ullamcorper non consectetur yellow pharetra non a urna varius parturient lorem.</p>
-  </div>
-  <div class="item"><h3>Quarter</h3>
-    <p>Vestibulum a tincidunt id ullamcorper non yellow yellow pharetra non a urna varius parturient lorem.</p>
-</div>
-<div class="item"><h3>Quarter</h3>
-  <p>Vestibulum a tincidunt id ullamcorper non yellow yellow pharetra non a urna varius parturient lorem.</p>
-</div>
-<div class="item"><h3>Quarter</h3>
-  <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-</div>
-<div class="item"><h3>Quarter</h3>
-  <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-</div>
-  
-</div>
+	
+<!--Download Now!-->
+<div class="row_content_centered v_space_lg">
+	<h1>What are you waiting for?</h1>
+	</div>	
 
 <div class="row">
-  <div class="item">
-     <img src="http://placekitten.com/200/200" alt="kitten"/><h3>Third</h3>
-    <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
-   <div class="item">
-     <img src="http://placekitten.com/200/200" alt="kitten"/><h3>Third</h3>
-    <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
-    <div class="item">
-     <img src="http://placekitten.com/200/200" alt="kitten"/><h3>Third</h3>
-    <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
-</div>
-  <div class="row">
-    <div class="item"><h4>Fifth</h4>
-        <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
-      <div class="item"><h4>Fifth</h4>
-        <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
-      <div class="item"><h4>Fifth</h4>
-        <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
-      <div class="item"><h4>Fifth</h4>
-        <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
-      <div class="item"><h4>Fifth</h4>
-        <p>Vestibulum a tincidunt id ullamcorper non consectetur consectetur pharetra non a urna varius parturient lorem.</p>
-  </div>
-    
-  </div>
-  
-</div>
+		<div class="item center">
+			<a href="#" class="button button_brand button_lg">Download on iOS
+			</a>
+			<a href="#" class="button button_brand button_lg">Download on Android
+			</a>
+			<h3>or</h3>
+			<a href="#" class="button button_brand button_lg">Use the web version
+			</a>
+		</div>
+</div>	
+	
+
+	<!--Footer-->
 
 <footer>
   <div class="container">

@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*Brand colors---
+	Orange: #ff6b00
+	Light blue: #cbf3f0
+	Teal: #2ec4b6
+	Yellow: #ffd601
+	Grey: #635e55
+*/
+
 * {
   margin: 0px;
   padding: 0px;
@@ -20,41 +29,52 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+a {
+	font-family: 'Lato', sans-serif;
+}
+
 /*typography*/
 h1, h2, h3, h4, h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-bottom: .75rem
 }
 h1 {
-  font-size: 3rem;
+ 	font-size: 3rem;
+	font-weight: 900;
 } /*48px*/
 h2 {
-  font-size: 2.5rem;
-} /*40px*/
-h3 {
   font-size: 2rem;
+	font-weight: 900;
 } /*32px*/
-h4 {
+h3 {
   font-size: 1.5rem;
+	font-weight: 700;
 } /*24px*/
-h5 {
+h4 {
   font-size: 1.25rem;
+	font-weight: 700;
 } /*20px*/
 p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.125rem;
-} /*18px*/
+  font-family: 'Lato', sans-serif;
+  font-size: 1.0rem;
+	font-weight: 300;
+} /*16px*/
 
 
 /*begin header css*/
 /*delete this if you get a new nav bar*/
 .header {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
-  position: fixed;
-  width: 100%;
-  z-index: 3;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+
 .header ul {
   margin: 0;
   padding: 0;
@@ -80,6 +100,8 @@ p {
   text-decoration: none;
   background: pink;
 }
+
+
 /* menu */
 .header .menu {
   clear: both;
@@ -92,6 +114,7 @@ p {
   display: inline-block;
   float: right;
   padding: 28px 20px;
+  padding-right: 0px;
   position: relative;
   user-select: none;
 }
@@ -137,6 +160,22 @@ p {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
+
+/*Responsive logo*/
+
+#header h1 a{
+	display: flex;
+    width: 50px;
+	outline: none;
+	height: 50px;
+	margin-top: 10px;
+    margin-left: 10px;
+	background-image:url("../images/logo-round.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
 /*end header css*/
 
 
@@ -163,6 +202,14 @@ p {
   margin: 5%;
 }
 
+#new_hero{
+	display: flex;
+	background:rgba(232,124,126,1.00);
+	background-position: center;
+    min-height: 30em;
+	flex-wrap: wrap;
+}
+
 .container {
   margin: auto;
 }
@@ -177,6 +224,72 @@ p {
   flex-direction: column;
 }
 
+.row_content_centered {
+    display: flex;
+    width: 100%;
+    padding: .75rem;
+    outline: thin grey solid;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-direction: row;
+  }	
+
+.cta {
+border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: none;
+  transition: all .3s ease;
+  width: 140px;
+  text-align: center;
+  background: purple;
+}
+
+.button {
+	align-items: center;
+	font-weight: 700;
+	font-size: 0.8rem;
+	color: white;
+	text-align: center;
+	background-color: cadetblue;
+	text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 36px;
+    transition: all .3s ease;
+}
+
+.button_lg {
+	border-radius: 100px;
+	height: 56px;
+	min-width: 250px;
+	max-width: 50%;
+    padding: 20px;
+}
+
+.button_sm {
+	border-radius: 100px;
+	height: 56px;
+	min-width: 150px;
+	max-width: 50%;
+    padding: 20px;
+}
+
+.button_brand{
+	background-color: blueviolet;
+}
+
+.button_light{
+	background-color:bisque;
+	color: darkblue;
+}
+
+.button:hover {
+ 	background-color: rgba(169,52,54,0.56);
+}
+
+
 /*the star of the show*/
 .item {
   margin: 10px;
@@ -186,6 +299,31 @@ p {
   flex-grow: 1;/*allows to add more or less children, fewer children will grow, more children will shrink*/
   flex-shrink: 1;
   padding: 0.75rem;
+  outline: thin red solid;
+  background-color:rgba(96,98,210,0.39);
+	align-items: center;
+}
+
+/*modifiers*/
+.v_space_sm {
+  margin-top: 2%;
+   margin-bottom: 2%;
+}
+.v_space_md {
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+.v_space_lg {
+   margin-top: 7%;
+   margin-bottom: 7%;
+}
+
+.flex_end{
+	justify-content: flex-end;
+	}
+
+.center{
+	align-items: center;
 }
 
 
@@ -205,7 +343,19 @@ footer, footer a {
     font-size: 125%;
   }
     
+#header h1 a{
+	 display: flex;
+     width: 200px;
+	 outline: none;
+	height: 100px;
+	background-image: url("../images/logo-gray.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
     
+	
   #hero {}
     
     
@@ -217,6 +367,12 @@ footer, footer a {
     
     /*header css*/
     /*delete this if you get a new navbar*/
+	
+	.header{
+		display: flex;
+		justify-content: space-between;
+	}
+	
   .header li {
     float: left;
   }
@@ -231,6 +387,7 @@ footer, footer a {
   .header .menu-icon {
     display: none;
   }
+	
    /*end header css*/ 
     
     
@@ -249,6 +406,16 @@ footer, footer a {
     margin-bottom: 1rem;
     flex-direction: row;
   }
+	
+	.column {
+    display: flex;
+    width: 100%;
+    padding: .75rem;
+    outline: thin purple solid;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-direction: column;
+  }
     
   .item {
     margin: 10px;
@@ -258,5 +425,17 @@ footer, footer a {
     flex-grow: 1;
     flex-shrink: 1;
     padding: 0.75rem;
+	  align-items: flex-start;
   }
+	.one_fifth {
+	width: 20%;
+  }
+	.two_fifth {
+	width: 40%;
+  }
+	.three_fifth {
+	width: 60%;
+  }
+
+
 }
