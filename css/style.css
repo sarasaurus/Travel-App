@@ -37,6 +37,7 @@ a {
 /*typography*/
 h1, h2, h3, h4, h5 {
   font-family: 'Lato', sans-serif;
+  color: #2a2b30;
   margin-bottom: .75rem
 }
 h1 {
@@ -59,20 +60,31 @@ p {
   font-family: 'Lato', sans-serif;
   font-size: 1.0rem;
 	font-weight: 300;
+	padding: 5px;
 } /*16px*/
 
 
 /*begin header css*/
-/*delete this if you get a new nav bar*/
+
+
 .header {
-    background-color: #fff;
-    box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+	position: fixed;
+	z-index: 10;
+	min-height: 100px;
+	width: 100%; 
+	background: rgba(34,34,34,0.0);
+	padding: 18px;
+	transition: all ease-out .5s;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.active {  
+  background-color: #ffffff;
+ box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
+
 }
 
 .header ul {
@@ -85,7 +97,6 @@ p {
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
   color: #333;
 }
@@ -98,7 +109,6 @@ p {
   font-size: 2em;
   padding: 10px 20px;
   text-decoration: none;
-  background: pink;
 }
 
 
@@ -176,29 +186,43 @@ p {
 	background-repeat: no-repeat;
 	text-indent: -9999px;
 }
+
 /*end header css*/
 
 
 #hero {
+  padding-top: 175px;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-image: url("../images/ocean.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -5;
+}
+
+#hero_cover{
   padding-top: 60px;
   min-height: 500px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  background-image: url("https://www.dolomitemountains.com/res/images/header/1.jpg");
+  background-image: url("../images/white-two-third.png");
   background-size: cover;
+  z-index: 1;
 }
 
 #hero_text {
-  max-width: 80%;
-  padding: 1rem;
+  max-width: 100%;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  border: thin black solid;
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.59);
+  background-color: white;
   margin: 5%;
 }
 
@@ -210,6 +234,81 @@ p {
 	flex-wrap: wrap;
 }
 
+#flight_deals{
+	background-image: url("../images/window.png");
+	background-position: center;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#solo_travel {
+	background-image: url("../images/indonesia.jpeg");
+	background-position: bottom;
+	background-size: cover;
+    background-repeat: no-repeat;
+	min-height: 350px;
+}
+
+#group_travel {
+	background-image: url("../images/camping.jpeg");
+	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	min-height: 350px;
+}
+
+#family_travel {
+	background-image: url("../images/family.png");
+	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	min-height: 350px;
+}
+
+#edu_app {
+	background-image: url("../images/education.png");
+	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	min-height: 350px;
+}
+
+#city_guide {
+	background-image: url("../images/lisbon.jpeg");
+	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#city_1{
+	background-image: url("../images/tokyo.jpeg");
+	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	min-height: 200px;
+}
+#city_2{
+	background-image: url("../images/france.png");
+	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	min-height: 200px;
+}
+#city_3{
+	background-image: url("../images/chile.png");
+	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	min-height: 200px;
+}
+
+#screengrab {
+	z-index: 8;
+	max-width: 250px;
+}
+
+/*Row and Container styles*/
+
 .container {
   margin: auto;
 }
@@ -218,7 +317,7 @@ p {
   display: flex;
   width: 100%;
   padding: .75rem;
-  outline: thin grey solid;
+  outline: none;
   justify-content: space-between;
   margin-bottom: 1rem;
   flex-direction: column;
@@ -228,11 +327,37 @@ p {
     display: flex;
     width: 100%;
     padding: .75rem;
-    outline: thin grey solid;
+    outline: none;
     justify-content: center;
     margin-bottom: 1rem;
     flex-direction: row;
   }	
+
+ .row_divider{
+    display: flex;
+    width: 100%;
+    padding: 5%;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-direction: row;
+	min-height: 250px;
+  }
+
+.passport_item {
+	margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+	align-items: flex-start;
+	justify-content: flex-start;
+	min-height: 200px;
+	border-radius: 5%;
+}
+
+/*button styles*/
 
 .cta {
 border-radius: 20px;
@@ -261,6 +386,7 @@ border-radius: 20px;
 }
 
 .button_lg {
+	margin: 5px; 
 	border-radius: 100px;
 	height: 56px;
 	min-width: 250px;
@@ -277,16 +403,16 @@ border-radius: 20px;
 }
 
 .button_brand{
-	background-color: blueviolet;
+	background-color: #ff6b00;
 }
 
 .button_light{
 	background-color:bisque;
-	color: darkblue;
+	color: #635e55;
 }
 
 .button:hover {
- 	background-color: rgba(169,52,54,0.56);
+ 	background-color: #2ec4b6;
 }
 
 
@@ -299,9 +425,9 @@ border-radius: 20px;
   flex-grow: 1;/*allows to add more or less children, fewer children will grow, more children will shrink*/
   flex-shrink: 1;
   padding: 0.75rem;
-  outline: thin red solid;
-  background-color:rgba(96,98,210,0.39);
-	align-items: center;
+  outline: none;
+  background-color: none;
+  align-items: center;
 }
 
 /*modifiers*/
@@ -326,13 +452,63 @@ border-radius: 20px;
 	align-items: center;
 }
 
+.circle{
+	border-radius: 50%;
+	max-height: 30%;
+	max-width: 30%;
+}
 
+.background_light_blue{
+	background-color: #cbf3f0;
+}
+
+.background_orange{
+	background-color: #ff6b00;
+}
+
+.background_teal{
+	background-color: #2ec4b6;
+}
+
+.background_yellow{
+	background-color: #ffd601;
+}
+
+.headline_bg_yellow{
+  display: inline;
+  background-color: #ffd601;
+  box-shadow: 10px 0 0 #ffd601, -10px 0 0 #ffd601;
+}
+
+.headline_callout_teal {
+    display: inline;
+    padding: 2%;
+    box-shadow: 12px 10px 0 #2ec4b6, inset 0px 0px 0 #2ec4b6;
+	z-index: 5;
+}
+
+.white{
+	color: white;
+}
+
+.orange{
+	color: #ff6b00;
+}
+
+.tint {
+width: 100%;
+background: rgb(46,196,182);
+background: linear-gradient(90deg, rgba(46,196,182,1) 0%, rgba(46,196,182,0) 60%);
+}
+
+
+	
 footer {
-  background: #000;
+  background: #ffd601;
   padding: 2rem;
 }
 footer, footer a {
-  color: #fff;
+  color: #ff6b00
 }
 
 
@@ -355,14 +531,23 @@ footer, footer a {
 	text-indent: -9999px;
 }
     
-	
-  #hero {}
-    
+#hero {
+  padding-top: 175px;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-image: url("../images/white-two-third.png"), url("../images/ocean.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  z-index: -5;
+}
     
   #hero_text {
-    max-width: 50%;
     justify-content: flex-start;
     align-items: flex-start;
+	padding: 2em;
   }
     
     /*header css*/
@@ -383,6 +568,7 @@ footer, footer a {
     clear: none;
     float: right;
     max-height: none;
+	  background-color: inherit;
   }
   .header .menu-icon {
     display: none;
@@ -401,7 +587,7 @@ footer, footer a {
     display: flex;
     width: 100%;
     padding: .75rem;
-    outline: thin grey solid;
+    outline: none;
     justify-content: space-between;
     margin-bottom: 1rem;
     flex-direction: row;
@@ -411,7 +597,7 @@ footer, footer a {
     display: flex;
     width: 100%;
     padding: .75rem;
-    outline: thin purple solid;
+    outline: none;
     justify-content: space-between;
     margin-bottom: 1rem;
     flex-direction: column;
@@ -425,17 +611,34 @@ footer, footer a {
     flex-grow: 1;
     flex-shrink: 1;
     padding: 0.75rem;
-	  align-items: flex-start;
+	align-items: flex-start;
   }
-	.one_fifth {
+
+.item_align_center {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+	align-items: center;
+  }	
+		
+.one_fifth {
 	width: 20%;
   }
-	.two_fifth {
+.two_fifth {
 	width: 40%;
   }
-	.three_fifth {
+.three_fifth {
 	width: 60%;
   }
 
+.circle{
+	border-radius: 50%;
+	max-height: 50%;
+	max-width: 50%;
+}
 
 }

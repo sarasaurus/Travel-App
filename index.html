@@ -13,6 +13,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     
+	
+	<!--Javascript header scroll-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+ <script>
+$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 50) {
+            $(".header").addClass("active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".header").removeClass("active");
+        }
+    });
+});
+</script>
+
 
 </head>
 <body>
@@ -33,17 +49,28 @@
 </header>
 	
 <section id="hero">
-  <div id="hero_text">
-    <h2>Curated Travel</h2>
-    <h3>Choose your own adventure, or let VisionAiry pick the perfect trip.</h3>
-    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-    <a href="#" class="button button_brand button_lg">Get Started Button</a>
-	<a href="#" class="button button_light button_lg">Download now</a>
+	<div class="row v_space_md">
+	  <div class="column three_fifth">
+		<div class="item" id="hero_text">
+			<h1>VisionAiry</h1>
+			<h2>We see unforgettable trips in your future.</h2>
+			<p>Hi. We're VisionAiry - a travel app here to offer curated trips that work with your schedule. Slow period at work next week? We got you. Kids have spring break in three months? Also got you. 
+				
+			<br>
+			<br>
+				Whether you have a destination in mind, or need some vacation inspiration, we see adventure on the horizon.
+			</p>
+			<div class="row v_space_md">
+				<a href="#" class="button button_brand button_lg">Start planning</a>
+				<a href="#" class="button button_light button_lg">Download the app</a>
+			</div>
+		</div>
+	</div>
     </div>
 </section>
   
   <!--New hero/first row of content-->
-<div class="row v_space_lg">
+<!--<div class="row v_space_lg">
 	<h1>Travel curated by VisionAiry</h1>
 </div>
 <div class="container" id="new_hero"> 
@@ -59,160 +86,181 @@
 			<a href="#" class="button button_light button_lg">Get Started ASAP</a>
 		</div>
 	</div>
+</div>-->
+	
+	<div class="row_divider background_light_blue item_align_center v_space_lg">
+	<h1>Curated travel and dreamy destinations</h1>
 </div>
 	
+	<!--City Guides-->
+<div class="container">
+	<div class="row">
+		<h2 class="he">City Guides exclusively for VisionAiry</h2>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="item" id="city_guide">
+				<h2 class="headline_bg_yellow">Lisbon</h2>
+				<p class="headline_bg_yellow">Contemporary culture with an easygoing charm.</p>
+			</div>
+		</div>
+		<div class="column">
+			<div class="item" id="city_1">
+				<h2 class="headline_bg_yellow">Tokyo</h2>
+				<p class="headline_bg_yellow">Must see spots in Japan's capital city.</p>
+			</div>
+			<div class="item" id="city_2">
+				<h2 class="headline_bg_yellow">Cannes</h2>
+				<p class="headline_bg_yellow">Unexpected surpises in the French Riviera.</p>
+			</div>
+			<div class="item" id="city_3">
+				<h2 class="headline_bg_yellow">Valparaíso</h2>
+				<p class="headline_bg_yellow">Chile's colorful coastal city inspired Pablo Neruda.</p>
+			</div>
+		</div>
+	</div>
 	
-	<!--Calendar Integration-->
+<!--Family Travel-->
+	
+		<div class="row v_space_md">
+		<h2>Travel your way</h2>
+	</div>
+	
+	<div class="row">
+			<div class="item" id="solo_travel">
+				<h3 class="headline_bg_yellow">Best solo trips</h3>
+				<p class="headline_bg_yellow">Flying solo? Plan the trip of your dreams. Do what you want, go where you want. Use our suggestions as a jumping off point.</p>
+			</div>
+			<div class="item" id="group_travel">
+				<h3 class="headline_bg_yellow">Getaway with your pod</h3>
+				<p class="headline_bg_yellow">Grab your covid-pod and plan a socially distanced getaway at one of our highlighted destinations.</p>
+			</div>
+	</div>
+	<div class="row">
+			<div class="item" id="family_travel">
+				<h3 class="headline_bg_yellow">Kid friendly destinations</h3>
+				<p class="headline_bg_yellow">Itineraries perfect for bringing the family along - choose based on the age range of kids who will be traveling.</p>
+			</div>
+			<div class="item" id="edu_app">
+				<h3 class="headline_bg_yellow">EDU App Integration</h3>
+				<p class="headline_bg_yellow">Vacation can be educational AND fun! Use the EDU App integration to squeeze some learning into your family trip without sacrificing on enjoyment.</p>
+			</div>
+	</div>
+	
+</div>
+	
+	<!--Screengrab of app & CTA-->
+		<div class="row background_light_blue">
+			<div class="item">
+				<h2>Start exploring</h2>
+				<a href="#" class="button button_brand button_sm">Download app</a>
+			</div>
+			<div class="item">
+				<img src="images/beach.png" alt="screengrab" width="600" height="200" id="screengrab">
+			</div>
+		</div>
+	<!--Calendar integration-->
+	
 <div class="container">	
-	<div class="row v_space_md">
-		<h2>Powerful Calendar Integration</h2>
+	<div class="row">
+		<h2>Powerful calendar integration</h2>
 	</div>
 	<div class="row"> 
-		<div class="item">
-			<img src="http://placekitten.com/150/75" alt="kitten">
-			<h3>Google Calendar Integration</h3>
-			<p>Wolf microdosing taxidermy chillwave blue bottle tempor, bespoke glossier bushwick vaporware consequat aliqua pitchfork.</p>
+		<div class="item_align_center">
+			<img src="images/google calendar.png" alt="google calendar" class="circle headline_bg_yellow">
+			<h3>Integration with apps</h3>
+			<p>VisionAiry works with Google Calendar, Microsoft Outlook, Apple Calendar, and other major calendar applications to find the optimal travel periods for your schedule.</p>
 		</div>
-		<div class="item">
-			<img src="http://placekitten.com/150/75" alt="kitten">
-			<h3>Work and School breaks</h3>
-			<p>Wolf microdosing taxidermy chillwave blue bottle tempor, bespoke glossier bushwick vaporware consequat aliqua pitchfork.</p>
+		<div class="item_align_center">
+			<img src="images/family_vacation.png" alt="family vacation" class="circle headline_bg_yellow">
+			<h3>Work and school breaks</h3>
+			<p>Thinking ahead to Spring break vacation, or the annual slow time at work? VisionAiry is. We'll suggest trips planned around breaks at work or school.</p>
 		</div>
-		<div class="item">
-			<img src="http://placekitten.com/150/75" alt="kitten">
+		<div class="item_align_center">
+			<img src="images/christmas.png" alt="christmas market" class="circle headline_bg_yellow">
 			<h3>Holiday reminders</h3>
-			<p>Wolf microdosing taxidermy chillwave blue bottle tempor, bespoke glossier bushwick vaporware consequat aliqua pitchfork.</p>
+			<p>If you're traveling for a holiday, or have in the past, VisionAiry can nudge you to book before it's too late (and you're left without a hotel room).</p>
 		</div>
 	</div>
 	
 	<!--Trips based on location-->
 	<div class="row v_space_md">
-		<h2>Trips based on travel time/distance</h2>
+		<h2>How far do you want to go?</h2>
 	</div>
 	<div class="row">
-		<div class="item">
-			<img src="http://placekitten.com/150/75" alt="kitten">
-			<h3>Local - 1 hour travel</h3>
-			<p>Wolf microdosing taxidermy chillwave blue bottle tempor, bespoke glossier bushwick vaporware consequat aliqua pitchfork. </p>
+		<div class="item_align_center">
+			<img src="images/1.png" alt="1" class="circle headline_bg_yellow">
+			<h3>Stay close</h3>
+			<p>Only have a day for travel? Use the "Stay close" feature to keep travel time under two hours.</p>
 		</div>
-		<div class="item">
-			<img src="http://placekitten.com/150/75" alt="kitten">
-			<h3>Mid - 2-5 hour travel</h3>
-			<p>Wolf microdosing taxidermy chillwave blue bottle tempor, bespoke glossier bushwick vaporware consequat aliqua pitchfork. </p>
+		<div class="item_align_center">
+			<img src="images/3.png" alt="3" class="circle headline_bg_yellow">
+			<h3>Get away</h3>
+			<p>If you've got a weekend available, use the "Get away" category for trips that require 2-5 hours of travel time.</p>
 		</div>
-		<div class="item">
-			<img src="http://placekitten.com/150/75" alt="kitten">
-			<h3>Far - 5-10+ hour travel</h3>
-			<p>Wolf microdosing taxidermy chillwave blue bottle tempor, bespoke glossier bushwick vaporware consequat aliqua pitchfork.  </p>
+		<div class="item_align_center">
+			<img src="images/5.png" alt="5" class="circle headline_bg_yellow">
+			<h3>Really get away</h3>
+			<p>When you really need a change of scenery, look through suggested trips with travel times of 5+ hours. </p>
 		</div>
-	</div>
 	
-	<!--More Features or Call outs-->
-	<div class="row v_space_md">
-		<h2>Even More Features</h2>
-	</div>
-	<div class="row">
-		<div class="column">
-			<div class="item">
-				<h3>Flight Deals</h3>
-				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
-			</div>
-		</div>
-		<div class="column">
-			<div class="item">
-				<h3>Family Travel</h3>
-				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
-			</div>
-			<div class="item">
-				<h3>EDU App Integration</h3>
-				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
-			</div>
-		</div>
 	</div>
 </div>
-	
-	<!--Explore Section-->
-<div class="row v_space_lg">
-	<h1>Discover dreamy destinations</h1>
-</div>
-
-	<!--City Guides-->
-<div class="container">
-	<div class="row">
-		<h2>Even More Features</h2>
-	</div>
-	<div class="row">
-		<div class="column">
-			<div class="item">
-				<h3>City Guides</h3>
-				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
-			</div>
-		</div>
-		<div class="column">
-			<div class="item">
-				<h3>City 1</h3>
-				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
-			</div>
-			<div class="item">
-				<h3>City 2</h3>
-				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
-			</div>
-			<div class="item">
-				<h3>City 3</h3>
-				<p>Pour-over kitsch bespoke tacos retro scenester offal aliqua taxidermy eu messenger bag typewriter voluptate sed gluten-free. Wolf tattooed copper mug, excepteur normcore mixtape adipisicing.</p>
-			</div>
-		</div>
-	</div>
-	
 	<!--Travel Deals-->
-	<div class="row v_space_md">
+<!--	<div class="row v_space_md">
 		<h2>Flight Deals</h2>
 	</div>
 	<div class="row">
 		<h3>Ready for a change of scenery? We scour the web for daily flight deals, so if you don't already have a destination in mind, this might just be your jumping off point.</h3>
 	</div>
-</div>
+</div>-->
 
 	<!--Go section -->
-<div class="row v_space_lg">
-	<h1>Ready to go?</h1>
-</div>	
+<div class="row_divider background_light_blue v_space_lg">
+	<h1 class="item_align_center">Save it all in your Digital Passport</h1>
+</div>		
 	
 	<!--Digital Passport-->
 <div class="container">
 	<div class="row">
-		<h2>Save it all in your Digital Passport</h2>
+		<h3>Found your perfect trip? Review saved itineraries and easily add new items in your Digital Passport. VisionAiry will suggest additional things to do, and keep the excitement growing by counting down to your next trip!</h3>
 	</div>
 	<div class="row">
-		<h3>Review saved itineraries. We'll suggest additional things to do, and get the stoke going by counting down to your next trip!</h3>
+	<h3 class="headline_bg_yellow">Two weeks to Lisbon!</h3>
 	</div>
 	<div class="row">
-			<div class="item">
-				<h4>Item 1</h4>
+	<p>Here's what we've got lined up...</p>
+	</div>
+	<div class="row">
+			<div class="item passport_item background_light_blue">
+				<h4 class="headline_bg_yellow">Wine tasting</h4>
 			</div>
-			<div class="item">
-				<h4>Item 2</h4>
-				<a href="#" class="button button_sm button_brand">add to trip!</a>
+			<div class="item passport_item background_teal row_content_centered">
+				<h4 class="headline_bg_yellow">Vespa tours</h4>
+				<a href="#" class="button button_sm button_light">add to trip</a>
 			</div>
-			<div class="item">
-				<h4>Item 3</h4>
+			<div class="item passport_item row_content_centered background_light_blue">
+				<h4 class="headline_bg_yellow">Diving</h4>
 			</div>
-			<div class="item">
-				<h4>Item 4</h4>
+			<div class="item passport_item row_content_centered background_light_blue">
+				<h4 class="headline_bg_yellow">Oeiras Beach</h4>
 			</div>
-			<div class="item">
-				<h4>Item 5</h4>
+			<div class="item passport_item row_content_centered background_teal">
+				<h4 class="headline_bg_yellow">Historic Streetcar</h4>
+				<a href="#" class="button button_sm button_light">add to trip</a>
 			</div>
 	</div>
 </div>
 	
 <!--Download Now!-->
-<div class="row_content_centered v_space_lg">
-	<h1>What are you waiting for?</h1>
+<div class="v_space_lg">
+<div class="row_divider background_light_blue item_align_center">
+	<h1>Ready to go?</h1>
 	</div>	
-
+</div>
+	
 <div class="row">
-		<div class="item center">
+		<div class="item_align_center">
 			<a href="#" class="button button_brand button_lg">Download on iOS
 			</a>
 			<a href="#" class="button button_brand button_lg">Download on Android
@@ -229,44 +277,21 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="item">
-        <h5>heading</h5>
-        <ul>
-          <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-          </ul>
-    </div>
          <div class="item">
-        <h5>heading</h5>
+        <h4>VisionAiry</h4>
+		<h5>San Francisco, CA</h5>
         <ul>
-          <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-             </ul>
+          <li><a href="#">Who we are</a></li>
+			 <li><a href="#">App updates</a></li>
+			<li><a href="#">Site map</a></li>
+        </ul>
     </div>
             <div class="item">
-        <h5>heading</h5>
+        <h4>Get in touch</h4>
         <ul>
-          <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-      </ul>
-    </div>
-               <div class="item">
-        <h5>heading</h5>
-        <ul>
-          <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
-           <li><a href="#">link</a></li>
+          <li><a href="#">Email us</a></li>
+           <li><a href="#">Instagram</a></li>
+           <li><a href="#">Support</a></li>
       </ul>
     </div>
   </div>
