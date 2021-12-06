@@ -60,17 +60,17 @@ p {
   font-family: 'Lato', sans-serif;
   font-size: 1.0rem;
 	font-weight: 300;
+	padding: 5px;
 } /*16px*/
 
 
 /*begin header css*/
-/*delete this if you get a new nav bar*/
 
 
 .header {
 	position: fixed;
 	z-index: 10;
-	height: 100px;
+	min-height: 100px;
 	width: 100%; 
 	background: rgba(34,34,34,0.0);
 	padding: 18px;
@@ -78,17 +78,14 @@ p {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: flex-start;
 }
 
 .active {  
   background-color: #ffffff;
-	box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
+ box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
 
 }
-
-
-
 
 .header ul {
   margin: 0;
@@ -100,7 +97,6 @@ p {
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
   color: #333;
 }
@@ -190,6 +186,7 @@ p {
 	background-repeat: no-repeat;
 	text-indent: -9999px;
 }
+
 /*end header css*/
 
 
@@ -303,6 +300,11 @@ p {
 	background-size: cover;
     background-repeat: no-repeat;
 	min-height: 200px;
+}
+
+#screengrab {
+	z-index: 8;
+	max-width: 250px;
 }
 
 /*Row and Container styles*/
@@ -502,11 +504,11 @@ background: linear-gradient(90deg, rgba(46,196,182,1) 0%, rgba(46,196,182,0) 60%
 
 	
 footer {
-  background: #000;
+  background: #ffd601;
   padding: 2rem;
 }
 footer, footer a {
-  color: #fff;
+  color: #ff6b00
 }
 
 
@@ -566,6 +568,7 @@ footer, footer a {
     clear: none;
     float: right;
     max-height: none;
+	  background-color: inherit;
   }
   .header .menu-icon {
     display: none;
@@ -612,7 +615,7 @@ footer, footer a {
   }
 
 .item_align_center {
-    margin: 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     flex-basis: 0;
