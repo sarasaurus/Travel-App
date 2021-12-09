@@ -47,6 +47,8 @@ h1 {
 h2 {
   font-size: 2rem;
 	font-weight: 900;
+	text-align: center;
+	padding-top: 20px;
 } /*32px*/
 h3 {
   font-size: 1.5rem;
@@ -60,7 +62,7 @@ p {
   font-family: 'Lato', sans-serif;
   font-size: 1.0rem;
 	font-weight: 300;
-	padding: 5px;
+	padding: 20px;
 } /*16px*/
 
 
@@ -196,7 +198,7 @@ p {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  background-image: url("../images/ocean.jpeg");
+  background-image: url("../images/ocean.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -250,7 +252,7 @@ p {
 }
 
 #group_travel {
-	background-image: url("../images/camping.jpeg");
+	background-image: url("../images/camping.jpg");
 	background-position: center;
 	background-size: cover;
     background-repeat: no-repeat;
@@ -258,7 +260,7 @@ p {
 }
 
 #family_travel {
-	background-image: url("../images/family.png");
+	background-image: url("../images/family.jpg");
 	background-position: center;
 	background-size: cover;
     background-repeat: no-repeat;
@@ -266,7 +268,7 @@ p {
 }
 
 #edu_app {
-	background-image: url("../images/education.png");
+	background-image: url("../images/education.jpg");
 	background-position: center;
 	background-size: cover;
     background-repeat: no-repeat;
@@ -278,28 +280,29 @@ p {
 	background-position: center;
 	background-size: cover;
     background-repeat: no-repeat;
+	min-height: 300px;
 }
 
 #city_1{
-	background-image: url("../images/tokyo.jpeg");
+	background-image: url("../images/tokyo.jpg");
 	background-position: center;
 	background-size: cover;
     background-repeat: no-repeat;
-	min-height: 200px;
+	min-height: 300px;
 }
 #city_2{
-	background-image: url("../images/france.png");
+	background-image: url("../images/france.jpg");
 	background-position: center;
 	background-size: cover;
     background-repeat: no-repeat;
-	min-height: 200px;
+	min-height: 300px;
 }
 #city_3{
-	background-image: url("../images/chile.png");
+	background-image: url("../images/chile.jpg");
 	background-position: center;
 	background-size: cover;
     background-repeat: no-repeat;
-	min-height: 200px;
+	min-height: 300px;
 }
 
 #screengrab {
@@ -331,6 +334,7 @@ p {
     justify-content: center;
     margin-bottom: 1rem;
     flex-direction: row;
+	flex-wrap: wrap;
   }	
 
  .row_divider{
@@ -352,10 +356,72 @@ p {
     flex-shrink: 1;
     padding: 0.75rem;
 	align-items: flex-start;
-	justify-content: flex-start;
+	justify-content: space-between;
 	min-height: 200px;
-	border-radius: 5%;
 }
+
+.passport_item a{
+	align-self: flex-end; 
+}
+
+#passport_1{
+	background-image: url("../images/wine tasting.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+	min-height: 300px;
+}
+
+#passport_2{
+	background-image: url("../images/food.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 300px;
+}
+
+#passport_3{
+	background-image: url("../images/scuba.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 300px;
+}
+
+#passport_4{
+	background-image: url("../images/portugese_beach.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 300px;
+}
+
+#passport_5{
+	background-image: url("../images/surf.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 300px;
+}
+
+#parallax {
+	position: fixed;
+	height: 400px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 6;
+	bottom: 0;
+  	right: 0;
+  	width: 300px;
+}
+
+#ready{
+	margin-bottom: 100px;
+	margin-top: 100px;
+	padding: 90px;
+}
+
 
 /*button styles*/
 
@@ -394,12 +460,21 @@ border-radius: 20px;
     padding: 20px;
 }
 
-.button_sm {
+.button_md {
+	margin: 5px; 
 	border-radius: 100px;
 	height: 56px;
-	min-width: 150px;
-	max-width: 50%;
+	min-width: 80px;
+	max-width: 200px;
     padding: 20px;
+}
+
+
+.button_sm {
+    padding: 20px;
+	border-radius: 50%;
+    min-height: 50px;
+    min-width: 50px;
 }
 
 .button_brand{
@@ -407,7 +482,7 @@ border-radius: 20px;
 }
 
 .button_light{
-	background-color:bisque;
+	background-color:#cbf3f0;
 	color: #635e55;
 }
 
@@ -444,6 +519,10 @@ border-radius: 20px;
    margin-bottom: 7%;
 }
 
+.extra_margin{
+	margin-top: 100px;
+}
+
 .flex_end{
 	justify-content: flex-end;
 	}
@@ -452,10 +531,17 @@ border-radius: 20px;
 	align-items: center;
 }
 
+.padding_left_right{
+	padding-left:40px;
+	padding-right: 40px;
+}
+
 .circle{
 	border-radius: 50%;
-	max-height: 30%;
-	max-width: 30%;
+}
+
+.circle_sm{
+	border-radius: 50%;
 }
 
 .background_light_blue{
@@ -474,10 +560,17 @@ border-radius: 20px;
 	background-color: #ffd601;
 }
 
+.background_bisque{
+	background-color: bisque;
+}
+
+
 .headline_bg_yellow{
   display: inline;
   background-color: #ffd601;
   box-shadow: 10px 0 0 #ffd601, -10px 0 0 #ffd601;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .headline_callout_teal {
@@ -501,14 +594,52 @@ background: rgb(46,196,182);
 background: linear-gradient(90deg, rgba(46,196,182,1) 0%, rgba(46,196,182,0) 60%);
 }
 
+.pop{
+	z-index: 7;
+	position: relative;
+}
 
+.item_align_center {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+	align-items: center;
+  }	
+
+.item_align_end {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+	align-items: center;
+	align-self: center;
+  }	
 	
 footer {
   background: #ffd601;
   padding: 2rem;
 }
 footer, footer a {
-  color: #ff6b00
+  color: #ff6b00;
+  font-family: 'Lato', sans-serif;
+  font-size: .8rem;
+  font-weight: 400;
+  text-transform: none;
+}
+
+footer h4 {
+  font-family: 'Lato', sans-serif;
+  text-transform: none;
+  color: #2a2b30;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 
@@ -518,6 +649,12 @@ footer, footer a {
   html {
     font-size: 125%;
   }
+	h2 {
+  font-size: 2rem;
+	font-weight: 900;
+	text-align: left;
+		padding-top: 0px;
+	}
     
 #header h1 a{
 	 display: flex;
@@ -537,7 +674,7 @@ footer, footer a {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  background-image: url("../images/white-two-third.png"), url("../images/ocean.jpeg");
+  background-image: url("../images/white-two-third.png"), url("../images/ocean.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center, center;
@@ -549,6 +686,7 @@ footer, footer a {
     align-items: flex-start;
 	padding: 2em;
   }
+
     
     /*header css*/
     /*delete this if you get a new navbar*/
@@ -624,6 +762,22 @@ footer, footer a {
     padding: 0.75rem;
 	align-items: center;
   }	
+	
+.item_align_end {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+	align-items: flex-end;
+	align-self: center;
+  }	
+	
+.pop{
+	top: -100px;
+}
 		
 .one_fifth {
 	width: 20%;
@@ -637,8 +791,8 @@ footer, footer a {
 
 .circle{
 	border-radius: 50%;
-	max-height: 50%;
-	max-width: 50%;
+	min-height: 75px;
+	min-width: 75px;
 }
 
 }
